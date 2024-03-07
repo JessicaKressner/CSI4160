@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of website -->
+    <title>Recipe Finder</title>
+    <!-- Link to css file -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to javascript file -->
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Title of website -->
+    <p id="title">Recipe Finder</p>
+    </header>
+    <!-- Div with inputs and generate recipes button -->
+    <div id="RecipeSpecifics">
+      <!-- Div with labels and inputs -->
+      <div id="info">
+        <!-- Div with labels -->
+        <div class="input" id="label">
+          <label for="Cusine">Cusine:</label>
+          <label for="Ingredients">Ingredients:</label>
+          <label for="Nutrients">Nutrients:</label>
+        </div>
+
+        <!-- Div with inputs-->
+        <div class="input" id="input">
+          <input placeholder="Enter cusine"></input>
+          <input placeholder="Enter ingredients"></input>
+          <input placeholder="Enter nutrients"></input>
+        </div>
+      </div>
+      
+      <!-- Div with generate recipes button -->
+      <div class="input" id="button">
+        <button>
+          <!-- Links to page with generated recipes -->
+          <a href="./recipes.html">Generate Recipes</a>
+        </button>
+        </div>
+    </div>
+  </body>
+</html>
