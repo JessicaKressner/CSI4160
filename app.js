@@ -34,3 +34,24 @@ $(document).ready(function () {
 //fetch(url)
 //.then((response) => response.json())
 //.then((data) => (recipes.textContext = data));
+
+const apiResults = [
+  {
+    title: "title1",
+    image: "image",
+    link: "link",
+  },
+];
+const cardContainer = document.getElementById("recipecards");
+
+apiResults.forEach((result) => {
+  const card = document.createElement("div");
+  const content = `
+  <div id="recipecards">
+  <h4>${result.title}</h4>
+  <img>${result.img}</img>
+  <a>${result.link}</a>
+  </div>`;
+
+  cardContainer.innerHTML += content;
+});

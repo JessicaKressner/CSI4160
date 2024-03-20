@@ -19,6 +19,58 @@ body {
   height: 400px;
 }
 
+#login {
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+#logininfo {
+  background-color: white;
+  text-align: left;
+  align-items: left;
+  border-radius: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+#info {
+  display: flex;
+  flex-direction: row;
+}
+
+#recipeCards {
+  background-color: white;
+  text-align: center;
+  align-items: center;
+  border-radius: 25px;
+}
+
+ul {
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+}
+
+ul li {
+  padding-left: 50px;
+}
+
+#navbar {
+  padding-left: 500px;
+}
+
 #label {
   padding-top: 10%;
   padding-left: 30%;
@@ -40,11 +92,6 @@ body {
 
 #input input {
   width: 200px;
-}
-
-#info {
-  display: flex;
-  flex-direction: row;
 }
 
 #button {
@@ -74,9 +121,33 @@ button {
   color: white;
   border-radius: 10px;
   padding: 10px;
+  width: 200px;
+}
+
+#recipes {
+  text-decoration: none;
+  color: white;
+}
+
+.user {
+  background-color: white;
 }
 
 a {
   text-decoration: none;
   color: white;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.button {
+  text-decoration: none;
+  color: white;
+}
+
+#info > * {
+  padding-bottom: 20px;
 }
