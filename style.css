@@ -143,6 +143,12 @@ a {
   color: black;
 }
 
+#link {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+}
+
 .button {
   text-decoration: none;
   color: white;
