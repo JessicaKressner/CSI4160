@@ -157,3 +157,21 @@ a {
 #info > * {
   padding-bottom: 20px;
 }
+
+#cards {
+  background-color: white;
+  display: flex;
+  padding: 20px;
+  border-radius: 25px;
+  margin: 60px;
+}
+
+#cards .recipeName {
+  font-size: 50px;
+  text-align: center;
+}
+
+#cards .recipeImage {
+  height: 400px;
+  width: 400px;
+}

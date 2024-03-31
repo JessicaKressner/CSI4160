@@ -6,7 +6,7 @@
     <!-- Link to css file -->
     <link rel="stylesheet" href="style.css" />
     <!-- Link to javascript file -->
-    <script src="app.js" defer></script>
+    <script src="./recipes.js" defer></script>
   </head>
   <body>
     <header>
@@ -17,7 +17,6 @@
       <ul>
         <li><a class="navbar" href="./index.html">Home</a></li>
         <li><a class="navbar" href="./favorites.html">Favorites</a></li>
-        <li><a class="navbar" href="./settings.html">Settings</a></li>
       </ul>
       </div>
     <!-- Div with inputs and generate recipes button -->
@@ -43,9 +42,10 @@
       <div class="input" id="button">
         <button>
           <!-- Links to page with generated recipes -->
-          <a id="recipes" type="submit" href="./recipes.html">Generate Recipes</a>
+          <a id="recipes" onClick="Cards(info)" type="submit" href="./recipes.html">Generate Recipes</a>
         </button>
         </div>
+        <div id="cards"></div>
     </div>
   </body>
 </html>
