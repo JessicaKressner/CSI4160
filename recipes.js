@@ -41,7 +41,7 @@ function Cards(info) {
         </p>
         </div>
         </div>
-        <p class="recipeInstructions"> ${meals.strInstructions}</p>
+        <p class="recipeInstructions">Instructions: ${meals.strInstructions}</p>
         <p><a id="recipesource" href="${meals.strSource}">Source: ${meals.strSource}</a><p>
         </div>`;
   });
