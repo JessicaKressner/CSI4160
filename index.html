@@ -5,44 +5,36 @@
     <title>Recipe Finder</title>
     <!-- Link to css file -->
     <link rel="stylesheet" href="style.css" />
-    <!-- Link to javascript file -->
-    <script src="./recipes.js" defer></script>
   </head>
   <body>
     <header>
       <!-- Title of website -->
-    <p id="title">Recipe Finder</p>
+    <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
     </header>
-    <div id="navbar">
-      <ul>
-        <li><a class="navbar" href="./index.html">Home</a></li>
-        <li><a class="navbar" href="./favorites.html">Favorites</a></li>
-      </ul>
-      </div>
-    <!-- Div with inputs and generate recipes button -->
-    <div id="RecipeSpecifics">
-      <!-- Div with labels and inputs -->
+    <!-- Div with labels and buttons -->
+    <div id="recipeSpecifics">
+      <!-- Div with buttons -->
       <div id="info">
-        <!-- Div with labels -->
-        <div class="input" id="label">
-          <label class="loginlabel" for="Cusine">Cusine:</label>
-          <label class="loginlabel" for="Dish">Dish:</label>
-          <label class="loginlabel" for="Ingredients">Ingredients:</label>
+        <p id="selectButton">Select an Option</p>
+        <!-- Div with generate category button -->
+        <div class="button" id="categoryButton">
+          <button>
+            <a id="recipes" type="submit" href="./categoryrecipes.html">Generate Recipe From Specific Category</a>
+          </button>
         </div>
 
-        <!-- Div with inputs-->
-        <div class="input" id="input">
-          <input id="cusine" placeholder="Enter cusine"></input>
-          <input id="dish" placeholder="Enter food dish"></input>
-          <input id="ingredients" placeholder="Enter ingredients"></input>
+        <!-- Div with generate meal button -->
+        <div class="button" id="mealButton">
+          <button>
+            <a id="recipes" type="submit" href="./search.html">Generate Recipe From Meal Area</a>
+          </button>
         </div>
-      </div>
-      
+
       <!-- Div with generate recipes button -->
-      <div class="input" id="button">
+      <div class="button" id="recipeButton">
         <button>
           <!-- Links to page with generated recipes -->
-          <a id="recipes" onClick="Cards(info)" type="submit" href="./recipes.html">Generate Recipes</a>
+          <a id="recipes" type="submit" href="./recipes.html">Generate Recipe With No Specifics</a>
         </button>
         </div>
         <div id="cards"></div>

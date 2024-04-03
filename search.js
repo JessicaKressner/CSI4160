@@ -1,4 +1,7 @@
-fetch("https://www.themealdb.com/api/json/v1/1/random.php")
+const searchItem = document.getElementById("#searchInput");
+searchItem = "Pizza";
+// fetch(`www.themealdb.com/api/json/v1/1/search.php?s=${searchItem}`)
+fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=Pizza")
   .then((response) => response.json())
   .then((data) => Cards(data.meals));
 
