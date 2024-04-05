@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/category.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Title of website -->
+      <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
+    </header>
+    <div id="categoryDiv">
+      <div id="categorySpecifics">
+        <div id="categorySelect">
+          <label id="categoryLabel" for="category">Choose a category:</label>
+          <select name="category" id="category">
+            <option class="category" value="Select an Option">
+              Select an Option
+            </option>
+            <option class="category" value="Beef">Beef</option>
+            <option class="category" value="Breakfast">Breakfast</option>
+            <option class="category" value="Chicken">Chicken</option>
+            <option class="category" value="Dessert">Dessert</option>
+            <option class="category" value="Goat">Goat</option>
+            <option class="category" value="Lamb">Lamb</option>
+            <option class="category" value="Miscellaneous">
+              Miscellaneous
+            </option>
+            <option class="category" value="Pasta">Pasta</option>
+            <option class="category" value="Pork">Pork</option>
+            <option class="category" value="Seafood">Seafood</option>
+            <option class="category" value="Side">Side</option>
+            <option class="category" value="Starter">Starter</option>
+            <option class="category" value="Vegan">Vegan</option>
+            <option class="category" value="Vegetarian">Vegetarian</option>
+          </select>
+        </div>
+        <div class="generate">
+          <button>
+            <a onclick="window.location.reload()">Generate</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="recipeCards"></div>
+  </body>
+</html>

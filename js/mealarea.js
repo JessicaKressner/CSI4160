@@ -1,6 +1,9 @@
-// const category = getOption();
-// fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${category}`)
-fetch("https://www.themealdb.com/api/json/v1/1/filter.php?c=Breakfast")
+const area = document.querySelector("#area").selectedOptions[0].value;
+console.log(area);
+const url = "https://www.themealdb.com/api/json/v1/1/filter.php?a=" + area;
+console.log(url);
+
+fetch(url)
   .then((response) => response.json())
   .then((data) => Cards(data.meals));
 
@@ -46,10 +49,4 @@ function Cards(info) {
           </div>
           </div>`;
   });
-}
-
-function getOption() {
-  selectElement = document.querySelector("#category");
-  value = selectElement.value;
-  document.querySelector(".value").textContent = value;
 }

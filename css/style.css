@@ -87,11 +87,18 @@ li {
   border-radius: 25px;
   margin-left: 20%;
   margin-right: 20%;
-  height: 400px;
+  height: 200px;
+  width: 800px;
 }
 
 #categorySpecifics div {
   padding: 20px;
+  border-radius: 25px;
+}
+
+#categoryDiv {
+  display: flex;
+  justify-content: center;
 }
 
 #searchSpecifics {
@@ -129,9 +136,23 @@ li {
 #recipeCards div {
   padding: 10px;
   max-width: 800px;
+  border-radius: 25px;
 }
 
 .recipeInfo {
   background-color: white;
   text-align: center;
+}
+
+#areaSpecifics {
+  background-color: white;
+  text-align: center;
+  border-radius: 25px;
+  height: 200px;
+  width: 800px;
+}
+
+#areaDiv {
+  display: flex;
+  justify-content: center;
 }

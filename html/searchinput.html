@@ -2,8 +2,8 @@
 <html>
   <head>
     <title>Recipe Finder</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="./search.js" defer></script>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/search.js" defer></script>
   </head>
   <body>
     <header>
@@ -12,12 +12,12 @@
     </header>
     <div id="searchSpecifics">
     <p>Enter the name of a dish you want to search</p>
-    <input id="searchInput" placeholder="Enter item"></input>
+    <input id="searchInput" placeholder="Enter item" value=""></input>
     <button>
-      <a href="./search.html">
-        Generate Recipe
+      <a onclick="window.location.reload()">Generate</a>
       </a>
     </button>
     </div>
+    <div id="recipeCards"></div>
   </body>
 </html>

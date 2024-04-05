@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/mealarea.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Title of website -->
+      <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
+    </header>
+    <div id="areaDiv">
+      <div id="areaSpecifics">
+        <div id="areaSelect">
+          <label id="arealabel" for="area">Choose a meal area:</label>
+          <select name="area" id="area">
+            <option class="area" value="Select an Option">
+              Select an Option
+            </option>
+            <option class="area" value="American">American</option>
+            <option class="area" value="British">British</option>
+            <option class="area" value="Canadian">Canadian</option>
+            <option class="area" value="Chinese">Chinese</option>
+            <option class="area" value="Croatian">Croatian</option>
+            <option class="area" value="Dutch">Dutch</option>
+            <option class="area" value="Egyptian">Egyptian</option>
+            <option class="area" value="Filipino">Filipino</option>
+            <option class="area" value="French">French</option>
+            <option class="area" value="Greek">Greek</option>
+            <option class="area" value="Indian">Indian</option>
+            <option class="area" value="Irish">Irish</option>
+            <option class="area" value="Italian">Italian</option>
+            <option class="area" value="Jamaican">Jamaican</option>
+            <option class="area" value="Japanese">Japanese</option>
+            <option class="area" value="Kenyan">Kenyan</option>
+            <option class="area" value="Malaysian">Malaysian</option>
+            <option class="area" value="Mexican">Mexican</option>
+            <option class="area" value="Moroccan">Moroccan</option>
+            <option class="area" value="Polish">Polish</option>
+            <option class="area" value="Portuguese">Portuguese</option>
+            <option class="area" value="Russian">Russian</option>
+            <option class="area" value="Spanish">Spanish</option>
+            <option class="area" value="Thai">Thai</option>
+            <option class="area" value="Tunisian">Tunisian</option>
+            <option class="area" value="Turkish">Turkish</option>
+            <option class="area" value="Unknown">Unknown</option>
+            <option class="area" value="Vietnamese">Vietnamese</option>
+          </select>
+        </div>
+        <div class="generate">
+          <button>
+            <a onclick="window.location.reload()">Generate</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="recipeCards"></div>
+  </body>
+</html>

@@ -1,7 +1,10 @@
-//const searchItem = document.getElementById("#searchInput").value;
-//searchItem = Pizza;
-//fetch(`http://www.themealdb.com/api/json/v1/1/search.php?s=${searchItem}`)
-fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=Chicken")
+const searchItem = document.getElementById("#searchInput").value;
+console.log(searchItem);
+const url =
+  "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchItem;
+console.log(url);
+
+fetch(url)
   .then((response) => response.json())
   .then((data) => Cards(data.meals));
 
@@ -47,4 +50,10 @@ function Cards(info) {
         </div>
         </div>`;
   });
+}
+
+function getInput() {
+  const input = document.getElementById("searchInput");
+  console.log(input);
+  input.setAttribute("value", input);
 }
