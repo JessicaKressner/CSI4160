@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../js/letter.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <!-- Title of website -->
+      <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
+    </header>
+    <div id="letterDiv">
+      <div id="letterSpecifics">
+        <div id="letterSelect">
+          <label id="letterlabel" for="letter">Choose a letter :</label>
+          <select name="letter" id="letter">
+            <option class="letter" value="Select an Option">
+              Select an Option
+            </option>
+            <option class="letter" value="a">a</option>
+            <option class="letter" value="b">b</option>
+            <option class="letter" value="c">c</option>
+            <option class="letter" value="d">d</option>
+            <option class="letter" value="e">e</option>
+            <option class="letter" value="f">f</option>
+            <option class="letter" value="g">g</option>
+            <option class="letter" value="h">h</option>
+            <option class="letter" value="i">i</option>
+            <option class="letter" value="j">j</option>
+            <option class="letter" value="k">k</option>
+            <option class="letter" value="l">l</option>
+            <option class="letter" value="m">m</option>
+            <option class="letter" value="n">n</option>
+            <option class="letter" value="o">o</option>
+            <option class="letter" value="p">p</option>
+            <option class="letter" value="q">q</option>
+            <option class="letter" value="r">r</option>
+            <option class="letter" value="s">s</option>
+            <option class="letter" value="t">t</option>
+            <option class="letter" value="u">u</option>
+            <option class="letter" value="v">v</option>
+            <option class="letter" value="w">w</option>
+            <option class="letter" value="x">x</option>
+            <option class="letter" value="y">y</option>
+            <option class="letter" value="z">z</option>
+          </select>
+        </div>
+        <div class="generate">
+          <button>
+            <a onclick="window.location.reload()">Generate</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="recipeCards"></div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-const searchItem = document.getElementById("#searchInput").value;
+/* const searchItem = document.getElementById("#searchInput").value;
 console.log(searchItem);
 const url =
   "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchItem;
@@ -7,6 +7,17 @@ console.log(url);
 fetch(url)
   .then((response) => response.json())
   .then((data) => Cards(data.meals));
+*/
+document.getElementById("generateButton").addEventListener("click", () => {
+  let searchItem = document.getElementById("searchInput").value;
+  console.log(searchItem);
+  const url =
+    "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchItem;
+  console.log(url);
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => Cards(data.meals));
+});
 
 function Cards(info) {
   const cards = document.querySelector("#recipeCards");
@@ -14,7 +25,8 @@ function Cards(info) {
   info.forEach((meals) => {
     cards.innerHTML =
       cards.innerHTML +
-      `<div class="card">
+      `<p> Search results for ${searchItem} </p>
+        <div class="card">
        <div class="recipeInfo">
                 <p class="recipeName"> ${meals.strMeal} </p>
         <img src="${meals.strMealThumb}" class="recipeImage"></img>
