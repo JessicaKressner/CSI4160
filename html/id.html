@@ -3,22 +3,22 @@
   <head>
     <title>Recipe Finder</title>
     <link rel="stylesheet" href="../css/style.css" />
-    <script src="../js/search.js" defer></script>
+    <script src="../js/id.js" defer></script>
   </head>
   <body>
     <header>
       <!-- Title of website -->
       <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
     </header>
-    <div id="searchSpecifics">
-    <p>Enter the name of a dish you want to search</p>
+    <div id="idSpecifics">
+    <p>Enter the meal id of the meal you want to search</p>
     <input type="text" id="searchInput" placeholder="Enter item"></input>
     <button>
       <a id="generateButton">Generate</a>
       </a>
     </button>
     <button>
-      <a id="search" onclick="window.location.reload()">New Search</a>
+      <a id="idButton" onclick="window.location.reload()">New Meal Id Search</a>
     </button>
     </div>
     <div id="recipeCards"></div>

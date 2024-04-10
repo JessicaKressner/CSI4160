@@ -1,11 +1,13 @@
-const letter = document.querySelector("#letter").selectedOptions[0].value;
-console.log(letter);
-const url = "https://www.themealdb.com/api/json/v1/1/search.php?f=" + letter;
-console.log(url);
-
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => Cards(data.meals));
+document.getElementById("generateButton").addEventListener("click", () => {
+  let searchId = document.getElementById("searchInput").value.trim();
+  console.log(searchId);
+  const url =
+    "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + searchId;
+  console.log(url);
+  fetch(url)
+    .then((response) => response.json())
+    .then((data) => Cards(data.meals));
+});
 
 function Cards(info) {
   const cards = document.querySelector("#recipeCards");
@@ -49,4 +51,10 @@ function Cards(info) {
           </div>
           </div>`;
   });
+}
+
+function getInput() {
+  const input = document.getElementById("searchInput");
+  console.log(input);
+  input.setAttribute("value", input);
 }

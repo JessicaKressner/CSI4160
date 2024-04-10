@@ -15,7 +15,7 @@ body {
   border-radius: 25px;
   margin-left: 20%;
   margin-right: 20%;
-  height: 400px;
+  height: 500px;
 }
 
 button {
@@ -53,6 +53,10 @@ a {
 #cards .recipeImage {
   height: 400px;
   width: 400px;
+}
+
+#cards .recipeSource {
+  color: black;
 }
 
 #cards .recipeDiv {
@@ -133,6 +137,11 @@ li {
   width: 300px;
 }
 
+#recipeCards .recipeSource {
+  text-decoration: underline;
+  color: black;
+}
+
 #recipeCards div {
   padding: 10px;
   width: 800px;
@@ -167,4 +176,18 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 800px;
+}
+
+#idSpecifics {
+  background-color: white;
+  text-align: center;
+  border-radius: 25px;
+  margin-left: 20%;
+  margin-right: 20%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
 }

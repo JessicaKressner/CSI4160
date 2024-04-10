@@ -18,34 +18,8 @@ function Cards(info) {
                     <p class="recipeName"> ${meals.strMeal} </p>
             <img src="${meals.strMealThumb}" class="recipeImage"></img>
             <p class="mealId" id="id"> Meal Id: ${meals.idMeal} </p>
-            <button id="info">
-              <a>More info </a>
-            </button>
             </div>
-            <div id="moreInfo"> </div>
             </div>
-           `;
-  });
-}
-
-function getInfo() {
-  const id = `${meals.idMeal}`;
-  console.log(id);
-
-  let url = "https://www.themealdb.com/api/json/v1/1/lookup.php?i=" + id;
-  console.log(url);
-  fetch(url)
-    .then((response) => response.json())
-    .then((data) => Cards(data.meals));
-
-  moreInfo.forEach((meals) => {
-    innerHTML =
-      innerHTML +
-      `<div class="card">
-           <div class="recipeInfo">
-                    <p class="recipeName"> ${meals.strMeal} </p>
-            <img src="${meals.strMealThumb}" class="recipeImage"></img>
-            <p class="mealId" id="id"> Meal Id: ${meals.idMeal} </p>
            `;
   });
 }

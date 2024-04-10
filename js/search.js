@@ -1,15 +1,5 @@
-/* const searchItem = document.getElementById("#searchInput").value;
-console.log(searchItem);
-const url =
-  "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchItem;
-console.log(url);
-
-fetch(url)
-  .then((response) => response.json())
-  .then((data) => Cards(data.meals));
-*/
 document.getElementById("generateButton").addEventListener("click", () => {
-  let searchItem = document.getElementById("searchInput").value;
+  let searchItem = document.getElementById("searchInput").value.trim();
   console.log(searchItem);
   const url =
     "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchItem;
@@ -25,12 +15,11 @@ function Cards(info) {
   info.forEach((meals) => {
     cards.innerHTML =
       cards.innerHTML +
-      `<p> Search results for ${searchItem} </p>
-        <div class="card">
+      `<div class="card">
        <div class="recipeInfo">
                 <p class="recipeName"> ${meals.strMeal} </p>
         <img src="${meals.strMealThumb}" class="recipeImage"></img>
-        <div class="recipeInfo">
+        <p class="mealId" id="id"> Meal Id: ${meals.idMeal} </p>
         <p class="recipeCategory"> Category: ${meals.strCategory}</p>
         <p class="recipeArea"> Meal Area: ${meals.strArea}</p>
         <p class="recipeIngredients"> Ingredients:
@@ -58,14 +47,8 @@ function Cards(info) {
         </ul>
         </p>
         <p class="recipeInstructions"> Instructions: ${meals.strInstructions}</p>
-        <p><a id="recipesource" href="${meals.strSource}">Source: ${meals.strSource}</a><p>
+        <p><a class="recipeSource" href="${meals.strSource}">Source: ${meals.strSource}</a><p>
         </div>
         </div>`;
   });
-}
-
-function getInput() {
-  const input = document.getElementById("searchInput");
-  console.log(input);
-  input.setAttribute("value", input);
 }

@@ -13,6 +13,7 @@ function Cards(info) {
         <div class="recipeDiv">
         <img src="${meals.strMealThumb}" class="recipeImage"></img>
         <div class="recipeInfo">
+        <p class="mealId" id="id"> Meal Id: ${meals.idMeal} </p>
         <p class="recipeCategory"> Category: ${meals.strCategory}</p>
         <p class="recipeArea"> Meal Area: ${meals.strArea}</p>
         <p class="recipeIngredients"> Ingredients:
