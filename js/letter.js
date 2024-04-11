@@ -1,12 +1,17 @@
+// retrieve the selected letter
 const letter = document.querySelector("#letter").selectedOptions[0].value;
 console.log(letter);
+
+// api call url with the selected letter
 const url = "https://www.themealdb.com/api/json/v1/1/search.php?f=" + letter;
 console.log(url);
 
+// call the api with the fetch function
 fetch(url)
   .then((response) => response.json())
   .then((data) => Cards(data.meals));
 
+// displays the data from the api call in recipe cards
 function Cards(info) {
   const cards = document.querySelector("#recipeCards");
   console.log(info);

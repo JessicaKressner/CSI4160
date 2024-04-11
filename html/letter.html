@@ -10,8 +10,10 @@
       <!-- Title of website -->
       <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
     </header>
-    <div id="letterDiv">
+    <!-- Div with letter input and button -->
+    <div id="letterDiv" class="inputDiv">
       <div id="letterSpecifics">
+        <!-- Div with letter select -->
         <div id="letterSelect">
           <label id="letterlabel" for="letter">Choose a letter :</label>
           <select name="letter" id="letter">
@@ -46,6 +48,7 @@
             <option class="letter" value="z">z</option>
           </select>
         </div>
+        <!-- Div with generate button-->
         <div class="generate">
           <button>
             <a onclick="window.location.reload()">Generate</a>
@@ -53,6 +56,7 @@
         </div>
       </div>
     </div>
+    <!-- Div with recipe cards -->
     <div id="recipeCards"></div>
   </body>
 </html>

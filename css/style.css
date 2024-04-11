@@ -29,68 +29,18 @@ a {
   color: white;
 }
 
-#selectButton {
-  font-size: 28px;
-}
-
 #RecipeSpecifics div {
   padding: 5px;
-}
-
-#cards {
-  background-color: white;
-  display: flex;
-  padding: 20px;
-  border-radius: 25px;
-  margin: 60px;
-}
-
-#cards .recipeName {
-  font-size: 50px;
-  text-align: center;
-}
-
-#cards .recipeImage {
-  height: 400px;
-  width: 400px;
-}
-
-#cards .recipeSource {
-  color: black;
-}
-
-#cards .recipeDiv {
-  display: flex;
-  flex-direction: row;
-}
-
-#cards .recipeDiv p {
-  padding: 10px;
-  padding-left: 60px;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 li {
   display: inline;
 }
 
-#cards .recipeDiv ul {
-  padding-left: 60px;
-  font-size: 20px;
-}
-
-#cards #recipesource {
-  text-decoration: underline;
-  color: black;
-}
-
 #categorySpecifics {
   background-color: white;
   text-align: center;
   border-radius: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
   height: 200px;
   width: 800px;
 }
@@ -100,7 +50,7 @@ li {
   border-radius: 25px;
 }
 
-#categoryDiv {
+.inputDiv {
   display: flex;
   justify-content: center;
 }
@@ -109,12 +59,12 @@ li {
   background-color: white;
   text-align: center;
   border-radius: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 300px;
+  width: 800px;
 }
 
 #searchInput {
@@ -161,21 +111,15 @@ li {
   width: 800px;
 }
 
-#areaDiv {
-  display: flex;
-  justify-content: center;
-}
-
 #letterSpecifics {
   background-color: white;
   text-align: center;
   border-radius: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
   height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 200px;
   width: 800px;
 }
 
@@ -183,9 +127,7 @@ li {
   background-color: white;
   text-align: center;
   border-radius: 25px;
-  margin-left: 20%;
-  margin-right: 20%;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;

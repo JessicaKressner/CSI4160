@@ -10,8 +10,10 @@
       <!-- Title of website -->
       <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
     </header>
-    <div id="categoryDiv">
+    <!-- Div with select category and generate button -->
+    <div id="categoryDiv" class="inputDiv">
       <div id="categorySpecifics">
+        <!-- Div with options to select category -->
         <div id="categorySelect">
           <label id="categoryLabel" for="category">Choose a category:</label>
           <select name="category" id="category">
@@ -36,12 +38,14 @@
             <option class="category" value="Vegetarian">Vegetarian</option>
           </select>
         </div>
+        <!-- Div with generate button-->
         <div class="generate">
           <button>
             <a onclick="window.location.reload()">Generate</a>
           </button>
         </div>
       </div>
+      <!-- Div with recipe cards-->
     </div>
     <div id="recipeCards"></div>
   </body>

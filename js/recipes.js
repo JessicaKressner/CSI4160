@@ -1,18 +1,19 @@
+// call the api with the fetch function
 fetch("https://www.themealdb.com/api/json/v1/1/random.php")
   .then((response) => response.json())
   .then((data) => Cards(data.meals));
 
+// displays the data from the api call in recipe cards
 function Cards(info) {
-  const cards = document.querySelector("#cards");
+  const cards = document.querySelector("#recipeCards");
   console.log(info);
   info.forEach((meals) => {
     cards.innerHTML =
       cards.innerHTML +
       `<div class="card">
+      <div class="recipeInfo">
                 <p class="recipeName"> ${meals.strMeal} </p>
-        <div class="recipeDiv">
         <img src="${meals.strMealThumb}" class="recipeImage"></img>
-        <div class="recipeInfo">
         <p class="mealId" id="id"> Meal Id: ${meals.idMeal} </p>
         <p class="recipeCategory"> Category: ${meals.strCategory}</p>
         <p class="recipeArea"> Meal Area: ${meals.strArea}</p>
@@ -40,10 +41,9 @@ function Cards(info) {
         <li> ${meals.strIngredient20}: ${meals.strMeasure20} <li>
         </ul>
         </p>
-        </div>
-        </div>
         <p class="recipeInstructions">Instructions: ${meals.strInstructions}</p>
-        <p><a id="recipesource" href="${meals.strSource}">Source: ${meals.strSource}</a><p>
+        <p><a class="recipeSource" href="${meals.strSource}">Source: ${meals.strSource}</a><p>
+        <div>
         </div>`;
   });
 }

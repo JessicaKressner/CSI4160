@@ -1,14 +1,22 @@
+// add an event listener to the generate button so that it calls the
+// api when the button is clicked
 document.getElementById("generateButton").addEventListener("click", () => {
+  // retrieve the search input
   let searchItem = document.getElementById("searchInput").value.trim();
   console.log(searchItem);
+
+  // api call url with the search input
   const url =
     "https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchItem;
   console.log(url);
+
+  // call the api with the fetch function
   fetch(url)
     .then((response) => response.json())
     .then((data) => Cards(data.meals));
 });
 
+// displays the data from the api call in recipe cards
 function Cards(info) {
   const cards = document.querySelector("#recipeCards");
   console.log(info);

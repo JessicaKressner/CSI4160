@@ -10,9 +10,11 @@
       <!-- Title of website -->
       <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
     </header>
+    <!-- Div with search input and buttons -->
+    <div id="idDiv" class="inputDiv">
     <div id="idSpecifics">
     <p>Enter the meal id of the meal you want to search</p>
-    <input type="text" id="searchInput" placeholder="Enter item"></input>
+    <input type="text" id="searchInput" placeholder="Enter meal id"></input>
     <button>
       <a id="generateButton">Generate</a>
       </a>
@@ -20,6 +22,8 @@
     <button>
       <a id="idButton" onclick="window.location.reload()">New Meal Id Search</a>
     </button>
+  </div>
+  <!-- Div with recipe cards -->
     </div>
     <div id="recipeCards"></div>
   </body>

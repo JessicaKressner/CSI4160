@@ -10,8 +10,10 @@
       <!-- Title of website -->
       <p id="title"><a type="submit" href="./index.html">Recipe Finder</a></p>
     </header>
-    <div id="areaDiv">
+    <!-- Div with area select and button -->
+    <div id="areaDiv" class="inputDiv">
       <div id="areaSpecifics">
+        <!-- Div with area select -->
         <div id="areaSelect">
           <label id="arealabel" for="area">Choose a meal area:</label>
           <select name="area" id="area">
@@ -48,6 +50,7 @@
             <option class="area" value="Vietnamese">Vietnamese</option>
           </select>
         </div>
+        <!-- Div with generate button -->
         <div class="generate">
           <button>
             <a onclick="window.location.reload()">Generate</a>
@@ -55,6 +58,7 @@
         </div>
       </div>
     </div>
+    <!-- Div with recipe cards -->
     <div id="recipeCards"></div>
   </body>
 </html>
